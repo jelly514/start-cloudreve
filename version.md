@@ -26,3 +26,4 @@ s cli registry delete --name-version start-cloudreve@0.0.1 --type Application
 ## 版本说明
 
 - 初始化项目
+- 0.0.4 nas 初始化

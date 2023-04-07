@@ -46,6 +46,8 @@ services:
     actions: # 自定义执行逻辑，关于actions 的使用，可以参考：https://www.serverless-devs.com/serverless-devs/yaml#行为描述
       pre-deploy: # 在deploy之前运行
         - component: fc build --use-docker --dockerfile ./code/fc-project/Dockerfile ./
+      # post-deploy: # 初始化 nas
+      #   - component: fc invoke --service-name ${fc-nas-init.output.service.name} --function-name nas-init
     props: # 组件的属性值
       region: ${vars.region}
       service: ${vars.service}
