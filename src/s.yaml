@@ -21,7 +21,7 @@ vars:
   functionName: "{{ functionName }}"
   environmentVariables:     #  为函数配置环境变量
     App_Version: "0.0.1"
-  image: ${env(imageurl)}
+  image: registry.cn-shenzhen.aliyuncs.com/xxx/fc-cloudreve:2024-07-15-15-30-45
 
 services:
   fc-nas-init:
